@@ -12,6 +12,7 @@ const Header = ({ name, temp, desc }) => {
         <Link to={`/forecast/${id}`} className='extended-local'> Extended Forecast </Link>
       </section>
       : null }
+      <Link className="settings-link" to='/settings'> SETTINGS </Link>
     </article>
   )
 }

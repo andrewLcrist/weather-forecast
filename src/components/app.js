@@ -23,7 +23,6 @@ class App extends Component {
     return (
       <article>
         <Header {...this.props}/>
-        <Link to='/settings'> SETTINGS </Link>
         <PinnedWeather {...this.props}/>
         {this.props.children}
       </article>

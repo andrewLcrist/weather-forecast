@@ -8,9 +8,6 @@ const Dashboard = () => {
       <PinnedWeather id={0} />
       <PinnedWeather id={1} />
       <PinnedWeather id={2} />
-      <Link className='settings-link' to="/settings">
-        Settings
-      </Link>
     </div>
   )
 }
