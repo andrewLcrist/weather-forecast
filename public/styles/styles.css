@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 body {
-    font-family: 'Neuton', serif;
+    font-family: 'Lato', sans-serif;
     height: 100vh;
 }
 a {
-  font-family: 'Bree Serif', serif;
-  font-size: 40px;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
   margin: auto;
   padding-bottom: 1px;
   color: black;
@@ -22,12 +24,17 @@ a {
     margin: 15px;
     width: 100%;
 }
-#title {
-    font-family: 'Gravitas One', cursive;
+.title {
+    font-family: 'Lato', sans-serif;
     font-size: 40px;
+    font-weight: 400;
     color: #FF2776;
     margin: 10px;
     align-items: center;
+}
+.dashboard-container {
+  margin-top: 35px;
+  flex-direction: row;
 }
 .settings-link {
   font-size: 15px;
@@ -38,7 +45,6 @@ a {
 .extended-local {
   margin-left: 2px;
   font-size: 16px;
-  border-bottom: 2px solid #23D831;
 }
 .home-link {
   font-size: 20px;
@@ -56,24 +62,26 @@ a {
   margin: 10px 0;
   margin-left: 40%;
   font-size: 20px;
-  font-family: 'Gravitas One', cursive;
 }
 .weekday {
-  font-family: 'Bree Serif', serif;
   margin-left: 5px;
 }
-.current-pinned {
-  font-size: 35px;
+.pinned-weather {
+  display: inline-block;
+  height: 80px;
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center;
 }
-#current-forecast, .pinned-weather {
-    display: inline-block;
-    height: 80px;
-    width: 30%;
-    font-size: 14px;
-    font-weight: bolder;
-    padding: 5px;
-    color: black;
-    align-items: center;
+.current-forecast {
+  display: inline-block;
+  height: 80px;
+  width: 30%;
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 5px;
+  color: black;
+  align-items: center;
 }
 .month-name, .month-date, .year, .temp-high, .temp-low {
 }
@@ -97,7 +105,6 @@ a {
    justify-content: space-between;
 }
 #submitbtn, #deletebtn {
-    font-family: 'Bree Serif', serif;
     font-size: 13px;
     width: 120px;
     height: 48px;
@@ -132,15 +139,4 @@ button:enabled {
 }
 button:disabled {
     cursor: not-allowed;
-}
-@keyframes glow {
-    from {text-shadow: none;}
-    to {text-shadow: 0px 0px 70px #FF8300;
-    text-shadow: 0px 0px 60px #FF8300;
-    text-shadow: 0px 0px 50px #FF8300;
-    text-shadow: 0px 0px 40px #FF8300;
-    text-shadow: 0px 0px 30px #FF8300;
-    text-shadow: 0px 0px 20px #FF8300;
-    text-shadow: 0px 0px 10px #FF8300;
-    color: #FF8300;}
 }
