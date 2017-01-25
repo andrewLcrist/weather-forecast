@@ -13,15 +13,4 @@ describe('actions', () => {
     expect(true).toEqual(true)
   });
 
-  // it('should create an action to identify current extended forecast', () => {
-  //   const json = 'cloudy';
-  //   const expectedAction = {
-  //     type: 'CURRENT_EXTENDED_FORECAST',
-  //     extendedForecast: json
-  //   };
-  //
-  //   expect(fetchWeatherCurrentLocation(json)).toEqual(expectedAction);
-  // });
-
-
 });

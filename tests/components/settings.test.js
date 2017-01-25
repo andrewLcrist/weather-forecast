@@ -22,17 +22,4 @@ describe('SettingsForm', () => {
     expect(wrapper.find('button').length, 1)
   })
 
-  // it('should call the onClick prop when clicked', () => {
-  //   const onClickMock = jest.fn();
-  //   const wrapper = mount(
-  //     <SettingsForm
-  //       handleSubmit={onClickMock}
-  //     />
-  //   );
-  //
-  //   wrapper.find('#submitbtn').simulate('click');
-  //
-  //   expect(onClickMock).toBeCalled();
-  // });
-
 });

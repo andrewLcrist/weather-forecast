@@ -5,13 +5,14 @@ const Header = ({ name, temp, desc }) => {
   let id = 'l'
   return(
     <article id='header'>
-      <h1 id='title' className='glow'>Weather!</h1>
+      <h1 className='title'>Weather Forecast</h1>
       { !!name ?
-      <section id='current-forecast'>
+      <section className='current-forecast'>
         The current forecast for {name} is {desc} at {Math.round(temp)}°F
         <Link to={`/forecast/${id}`} className='extended-local'> Extended Forecast </Link>
       </section>
       : null }
+      <Link className="settings-link" to='/settings'> SETTINGS </Link>
     </article>
   )
 }
