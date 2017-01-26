@@ -18,12 +18,14 @@ const SettingsForm = ({ names, handleSubmit, handleDelete }) => {
           handleSubmit(input.value)
         }}>
           <input
+            autoFocus
             type='number'
             id='zip-input'
+            placeholder='Enter a Zipcode'
             ref={ node => { input = node }} />
           <button
             disabled={names.length > 2}
-            id='submitbtn'> Enter a Zipcode
+            className='submitbtn'> Submit
           </button>
         </form>
         {names}
