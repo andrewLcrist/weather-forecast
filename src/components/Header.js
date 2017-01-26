@@ -8,7 +8,7 @@ const Header = ({ name, temp, desc }) => {
       <h1 className='title'>Weather Forecast</h1>
       { !!name ?
       <section className='current-forecast'>
-        The current forecast for {name} is {desc} at {Math.round(temp)}°F
+        Current forecast for {name}: {desc} at {Math.round(temp)}°F
         <Link to={`/forecast/${id}`} className='extended-local'> Extended Forecast </Link>
       </section>
       : null }

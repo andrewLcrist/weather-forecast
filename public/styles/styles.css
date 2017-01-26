@@ -35,12 +35,13 @@ a {
 .dashboard-container {
   margin-top: 35px;
   flex-direction: row;
+  display: flex;
 }
 .settings-link {
   font-size: 15px;
   position: fixed;
-  right: 20px;
-  top: 10px;
+  right: 25px;
+  top: 17px;
 }
 .extended-local {
   margin-left: 2px;
@@ -67,21 +68,22 @@ a {
   margin-left: 5px;
 }
 .pinned-weather {
-  display: inline-block;
-  height: 80px;
-  font-size: 14px;
-  font-weight: bolder;
-  text-align: center;
-}
-.current-forecast {
-  display: inline-block;
+  display: flex;
   height: 80px;
   width: 30%;
   font-size: 14px;
   font-weight: bolder;
-  padding: 5px;
-  color: black;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: -5px 5px 5px #888888;
+}
+.current-forecast {
+  display: flex;
   align-items: center;
+  width: 65%;
+  font-size: 14px;
+  bottom: 0;
 }
 .month-name, .month-date, .year, .temp-high, .temp-low {
 }
