@@ -10,7 +10,7 @@ const SettingsForm = ({ names, handleSubmit, handleDelete }) => {
 
     return (
       <div className="settings-form">
-        <Link className='home-link' to=''> HOME </Link>
+        <Link className='home-link' to=''> Back to Dashboard </Link>
         <form
           id='input-container'
           onSubmit={ (e) => {

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router'
 import PinnedWeather from '../containers/PinnedWeatherContainer'
 
 const Dashboard = () => {
