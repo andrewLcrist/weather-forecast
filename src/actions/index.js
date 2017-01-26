@@ -1,5 +1,4 @@
 require('isomorphic-fetch');
-import axios from 'axios';
 
 export const RECEIVE_FORECAST = 'RECEIVE_FORECAST';
 

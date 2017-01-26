@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
-import { browserHistory, hashHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 import Routes from './routes';
 import thunk from 'redux-thunk';
 

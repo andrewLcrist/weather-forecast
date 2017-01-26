@@ -10,7 +10,7 @@ const SettingsForm = ({ names, handleSubmit, handleDelete }) => {
 
     return (
       <div className="settings-form">
-        <Link className='home-link' to=''> HOME </Link>
+        <Link className='home-link' to=''> Back to Dashboard </Link>
         <form
           id='input-container'
           onSubmit={ (e) => {
@@ -18,12 +18,14 @@ const SettingsForm = ({ names, handleSubmit, handleDelete }) => {
           handleSubmit(input.value)
         }}>
           <input
+            autoFocus
             type='number'
             id='zip-input'
+            placeholder='Enter a Zipcode'
             ref={ node => { input = node }} />
           <button
             disabled={names.length > 2}
-            id='submitbtn'> Enter a Zipcode
+            className='submitbtn'> Submit
           </button>
         </form>
         {names}

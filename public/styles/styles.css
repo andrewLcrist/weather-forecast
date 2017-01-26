@@ -3,6 +3,7 @@
 body {
     font-family: 'Lato', sans-serif;
     height: 100vh;
+    background: aliceblue;
 }
 a {
   font-family: 'Lato', sans-serif;
@@ -12,6 +13,10 @@ a {
   color: black;
   text-decoration: none;
 }
+#root {
+  width: 72vw;
+  margin: auto;
+}
 #container {
     border: 15px dashed #FF2776;
     background: #FFFC2A;
@@ -19,18 +24,21 @@ a {
     text-align: center;
 }
 #header {
-    display: flex;
-    height: 50px;
-    margin: 15px;
+    height: 65px;
     width: 100%;
+    background-color: black;
 }
 .title {
     font-family: 'Lato', sans-serif;
     font-size: 40px;
     font-weight: 400;
-    color: #FF2776;
+    color: #005ab3;
     margin: 10px;
     align-items: center;
+    display: inline-block;
+}
+.header-background {
+  height: 75px;
 }
 .dashboard-container {
   margin-top: 35px;
@@ -49,8 +57,8 @@ a {
 }
 .home-link {
   font-size: 20px;
-  display: inline-block;
-  margin-left: 25px;
+  display: inherit;
+  text-align: center;
 }
 .day {
   display: flex;
@@ -70,20 +78,21 @@ a {
 .pinned-weather {
   display: flex;
   height: 80px;
-  width: 30%;
+  width: 32%;
   font-size: 14px;
   font-weight: bolder;
   text-align: center;
   border: 2px solid black;
   border-radius: 5px;
   box-shadow: -5px 5px 5px #888888;
+  background: #ebebeb;
 }
 .current-forecast {
-  display: flex;
+  display: inline-block;
   align-items: center;
-  width: 65%;
   font-size: 14px;
   bottom: 0;
+  color: white;
 }
 .month-name, .month-date, .year, .temp-high, .temp-low {
 }
@@ -97,44 +106,21 @@ a {
     margin: 10px;
 }
 #input-container, .cities {
-   padding-top: 20px;
-   padding-bottom: 20px;
+  padding-top: 20px;
    display: flex;
-   height: 60px;
-   width: 400px;
+   width: 188px;
    margin: auto;
-   align-items: center;
-   justify-content: space-between;
 }
 #submitbtn, #deletebtn {
-    font-size: 13px;
-    width: 120px;
-    height: 48px;
-    color: white;
-    margin-left: 20px;
-    border-radius: 5%;
-    border-color: #2785FF;
-    border-width: 8px;
-    background-color: #23D831;
+
+}
+button {
+  font-size: 13px;
 }
 #deletebtn {
   font-size: 12px;
   width: 100px;
   height: 40px;
-}
-#zip-input {
-    height: 30px;
-    font-size: 22px;
-    outline-color: #24E86E;
-    border-radius: 5%;
-    padding: 8px;
-    text-align: center;
-}
-input:focus {
-    outline-color: #23D831
-}
-button:focus {
-    outline-color: #23D831;
 }
 button:enabled {
     cursor: pointer;
