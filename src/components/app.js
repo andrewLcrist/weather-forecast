@@ -21,7 +21,7 @@ class App extends Component {
 
   render() {
     return (
-      <article>
+      <article className="overall-container">
         <Header {...this.props}/>
         <PinnedWeather {...this.props}/>
         {this.props.children}
