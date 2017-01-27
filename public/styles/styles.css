@@ -48,8 +48,9 @@ a {
 .settings-link {
   font-size: 15px;
   position: fixed;
-  right: 25px;
+  right: 200px;
   top: 17px;
+  color: white;
 }
 .extended-local {
   margin-left: 2px;
