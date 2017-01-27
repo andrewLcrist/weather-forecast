@@ -24,9 +24,12 @@ a {
   width: 100%;
 }
 #header {
-    height: 65px;
-    width: 100%;
-    background-color: black;
+  height: 65px;
+  width: 70vw;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 16%;
 }
 .title {
     font-family: 'Lato', sans-serif;
@@ -41,7 +44,7 @@ a {
   height: 75px;
 }
 .dashboard-container {
-  margin-top: 35px;
+  margin-top: 70px;
   flex-direction: row;
   display: flex;
 }
