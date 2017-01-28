@@ -7,8 +7,8 @@ const PinnedWeather = ({ state, id }) =>
   return (
     <div className="pinned-weather">
       {state[id] ?
-        <Link to={`/forecast/${id}`}>
-          <div className='current-pinned'>
+        <Link className="a-pinned" to={`/forecast/${id}`}>
+          <div className='current-pinned a-pinned'>
             <span className='pinned-city'>
               {state[id].data.current_observation.display_location.full}{sp}
             </span>
@@ -19,7 +19,7 @@ const PinnedWeather = ({ state, id }) =>
           </div>
         </Link>
         :
-        <Link to="/settings">
+        <Link className="a-pinned" to="/settings">
           Save a New City
         </Link>
       }
