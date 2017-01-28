@@ -24,12 +24,16 @@ a {
   width: 100%;
 }
 #header {
-  height: 65px;
+  height: 70px;
   width: 70vw;
   background-color: black;
-  position: absolute;
-  top: 0;
-  left: 16%;
+  display: flex;
+  align-items: baseline;
+}
+.header-container {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgb(211, 211, 211), 50%, aliceblue);
 }
 .title {
     font-family: 'Lato', sans-serif;
@@ -52,10 +56,9 @@ a {
 }
 .settings-link {
   font-size: 15px;
-  position: fixed;
-  right: 200px;
-  top: 17px;
+  align-self: flex-end;
   color: white;
+  margin: 0px 0px 45px 350px;
 }
 .extended-local {
   margin-left: 2px;
