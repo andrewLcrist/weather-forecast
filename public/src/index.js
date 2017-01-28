@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import { hashHistory } from 'react-router';
 import Routes from './routes';
 import thunk from 'redux-thunk';
+require('../styles/style.scss');
 
 import RootReducer from './reducers/RootReducer';
 
