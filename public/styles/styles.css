@@ -87,7 +87,7 @@ td {
 .dashboard-container {
   flex-direction: row;
   display: flex;
-  width: 50vw;
+  width: 65vw;
   margin: auto;
   flex-wrap: wrap;
   justify-content: center;

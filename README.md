@@ -1,10 +1,31 @@
-# React/Redux Weather Forecast Application
+## Weather Forecast
 
-This project template was built with [Create React App](https://github.com/facebookincubator/create-react-app).
+Application that allows users to immediately see their current weather forecast and the ability to add up to four other weather locations.
 
-## Setup
+The project was built with [React](https://facebook.github.io/react/), [webpack](https://webpack.github.io/), [React Router](https://github.com/ReactTraining/react-router), and CSS.
 
-### `npm install`
-### `npm start`
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Weather information was acquired using [The Wunderground API](https://www.wunderground.com/weather/api/).
+
+## Project Screen Shot
+
+![Landing Page](public/styles/images/screenshot.png)
+
+## Installation and Setup Instructions
+
+Clone down the repo. You will need `node` and `npm` installed globally on your machine.  
+
+Installation:
+
+`npm install`   
+
+To Start Server:
+
+`npm start`  
+
+## Reflection
+
+This is a group project that was built during Module 3 at Turing School of Software and Design.
+
+The purpose of the application was to continue building our knowledge of APIs while also providing a foundational knowledge of React Router. A limitation to the project was to only allow the user to add four additional locations in addition to the user's current location (determined by using `navigator.geolocation`).
+
+Future enhancements to the application include a more robust use of the Wunderground API that might create a better UX for the user.
