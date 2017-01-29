@@ -24,7 +24,7 @@ const SettingsForm = ({ names, handleSubmit, handleDelete }) => {
             placeholder='Enter a Zipcode'
             ref={ node => { input = node }} />
           <input
-            disabled={names.length > 2}
+            disabled={names.length > 3}
             className='submitbtn'
             type='submit'
             value='Submit'
