@@ -10,7 +10,7 @@ const SettingsForm = ({ names, handleSubmit, handleDelete }) => {
 
     return (
       <div className="settings-form">
-        <Link className='home-link' to=''> Back to Dashboard </Link>
+        <Link className='home-link' to=''>Return to Dashboard</Link>
         <form
           id='input-container'
           onSubmit={ (e) => {
@@ -23,10 +23,12 @@ const SettingsForm = ({ names, handleSubmit, handleDelete }) => {
             id='zip-input'
             placeholder='Enter a Zipcode'
             ref={ node => { input = node }} />
-          <button
+          <input
             disabled={names.length > 2}
-            className='submitbtn'> Submit
-          </button>
+            className='submitbtn'
+            type='submit'
+            value='Submit'
+          />
         </form>
         {names}
       </div>

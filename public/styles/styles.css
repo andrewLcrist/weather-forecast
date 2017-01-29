@@ -135,6 +135,15 @@ br {
   text-align: center;
   align-items: center
 }
+.settings-form {
+  border-top: black;
+  border-top-style: solid;
+  width: 70vw;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  padding-top: 16px;
+}
 .month-name, .month-date, .year, .temp-high, .temp-low {
 }
 .icon {
@@ -145,20 +154,25 @@ br {
 }
 #input-container, .cities {
   padding-top: 20px;
-   display: flex;
-   width: 188px;
-   margin: auto;
+  display: flex;
+  width: 250px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
-#submitbtn, #deletebtn {
-
+#zip-input {
+  margin-right: 10px;
+  border-radius: 5px;
+  border-width: 1px;
 }
 button {
   font-size: 13px;
 }
 #deletebtn {
   font-size: 12px;
-  width: 100px;
-  height: 40px;
+  width: 75px;
+  height: 22px;
+  margin: 0 0 0 15px;
 }
 button:enabled {
     cursor: pointer;
