@@ -11,7 +11,7 @@ const PinnedWeather = ({ state, id }) =>
     <div className="pinned-weather">
       {state[id] ?
         <div className="a-pinned">
-        <img className="city" src={cityArray[random]} width="100%"/>
+        <img className="city" alt="Picture of city" src={cityArray[random]} width="100%"/>
         <Link className="new-city" to={`/forecast/${id}`}>
           <div className='float-image-text'>
             <span className='pinned-city'>
@@ -26,7 +26,7 @@ const PinnedWeather = ({ state, id }) =>
         </div>
         :
         <div className="a-pinned">
-        <img className="city" src={cityArray[random]} width="100%"/>
+        <img className="city" alt="Picture of city" src={cityArray[random]} width="100%"/>
         <Link className="new-city" to="/settings">
           <p className="float-image-text">ADD NEW CITY</p>
         </Link>
