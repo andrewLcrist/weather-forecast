@@ -86,6 +86,7 @@ a {
   font-size: 20px;
   display: inherit;
   text-align: center;
+  color: white;
 }
 .day {
   display: flex;
