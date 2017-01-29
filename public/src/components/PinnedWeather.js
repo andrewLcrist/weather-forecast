@@ -18,7 +18,7 @@ const PinnedWeather = ({ state, id }) =>
               {state[id].data.current_observation.display_location.full}{sp}
             </span>
             <span className='pinned-observation'>
-              {state[id].data.current_observation.temp_f}&deg;{sp}
+              {Math.floor(state[id].data.current_observation.temp_f)}&deg;{sp}
               {state[id].data.current_observation.weather}
             </span>
           </div>

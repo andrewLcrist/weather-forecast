@@ -7,6 +7,7 @@ const Dashboard = () => {
       <PinnedWeather id={0} />
       <PinnedWeather id={1} />
       <PinnedWeather id={2} />
+      <PinnedWeather id={3} />
     </div>
   )
 }
