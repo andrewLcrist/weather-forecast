@@ -6,12 +6,14 @@ const PinnedWeather = ({ state, id }) =>
   let sp = ' '
   let img = "../../public/styles/images/"
   let cityArray = [img + '1.png',img + '2.png',img + '3.png',img + '4.png',img + '5.png',img + '6.png',img + '7.png',img + '8.png', img + '9.png']
-  const random = Math.floor(Math.random() * (8 - 1) + 1)
+  const random = Math.floor(Math.random() * 9)
   return (
     <div className="pinned-weather">
       {state[id] ?
-        <Link className="a-pinned" to={`/forecast/${id}`}>
-          <div className='current-pinned a-pinned'>
+        <div className="a-pinned">
+        <img className="city" src={cityArray[random]} width="100%"/>
+        <Link className="new-city" to={`/forecast/${id}`}>
+          <div className='float-image-text'>
             <span className='pinned-city'>
               {state[id].data.current_observation.display_location.full}{sp}
             </span>
@@ -21,12 +23,13 @@ const PinnedWeather = ({ state, id }) =>
             </span>
           </div>
         </Link>
+        </div>
         :
         <div className="a-pinned">
+        <img className="city" src={cityArray[random]} width="100%"/>
         <Link className="new-city" to="/settings">
-          Save a New City
+          <p className="float-image-text">ADD NEW CITY</p>
         </Link>
-        <img src={cityArray[random]} width="100%"/>
         </div>
       }
     </div>
