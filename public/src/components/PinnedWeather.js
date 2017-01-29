@@ -4,8 +4,9 @@ import { Link } from 'react-router';
 const PinnedWeather = ({ state, id }) =>
 {
   let sp = ' '
-  let image = "../public/styles/images/1.png"
-  // let cityArray = [img + '1.png',img + '2.png',img + '3.png',img + '4.png',img + '5.png',img + '6.png',img + '7.png',img + '8.png',]
+  let img = "../../public/styles/images/"
+  let cityArray = [img + '1.png',img + '2.png',img + '3.png',img + '4.png',img + '5.png',img + '6.png',img + '7.png',img + '8.png', img + '9.png']
+  const random = Math.floor(Math.random() * (8 - 1) + 1)
   return (
     <div className="pinned-weather">
       {state[id] ?
@@ -21,10 +22,12 @@ const PinnedWeather = ({ state, id }) =>
           </div>
         </Link>
         :
-        <Link className="a-pinned" to="/settings">
-          <img src={image} width="75px"/>
+        <div className="a-pinned">
+        <Link className="new-city" to="/settings">
           Save a New City
         </Link>
+        <img src={cityArray[random]} width="100%"/>
+        </div>
       }
     </div>
   )
