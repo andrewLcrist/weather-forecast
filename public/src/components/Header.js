@@ -11,8 +11,8 @@ const Header = ({ name, temp, desc }) => {
     </article>
       <section className='current-forecast'>
       { name ?
-      <p>Current forecast for {name}: {desc} at {Math.round(temp)}°F
-      <Link to={`/forecast/${id}`} className='extended-local'> Extended Forecast </Link> </p>
+      <p>Current forecast for {name}<br/><br/>{desc} at {Math.round(temp)}°F <br/><br/>
+      <Link to={`/forecast/${id}`} className='extended-local'> Extended Forecast </Link></p>
       : null }
       </section>
     </div>
