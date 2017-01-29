@@ -6,7 +6,7 @@ const Header = ({ name, temp, desc }) => {
   return(
     <div className="header-container">
     <article id='header'>
-      <h1 className='title'>Weather Forecast</h1>
+      <Link className='title' to=''>Weather Forecast</Link>
       <Link className="settings-link" to='/settings'> SETTINGS </Link>
     </article>
       <section className='current-forecast'>
