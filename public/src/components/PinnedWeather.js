@@ -22,10 +22,12 @@ const PinnedWeather = ({ state, id }) =>
           </div>
         </Link>
         :
-        <Link className="a-pinned" to="/settings">
-          <img src={cityArray[random]} width="75px"/>
+        <div className="a-pinned">
+        <Link className="new-city" to="/settings">
           Save a New City
         </Link>
+        <img src={cityArray[random]} width="100%"/>
+        </div>
       }
     </div>
   )

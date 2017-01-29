@@ -12,13 +12,18 @@ a {
   color: black;
   text-decoration: none;
 }
+img {
+  width: 400px;
+  display: inline-block;
+  position: relative;
+  height: 400px;
+  margin-top: -30px;
+  border-radius: 5px;
+  z-index: -1;
+  opacity: .8;
+}
 .a-pinned {
-  display: flex;
   font-size: 30px;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
 }
 #container {
     border: 15px dashed #FF2776;
@@ -60,6 +65,7 @@ a {
   width: 70vw;
   margin: auto;
   margin-top: 70px;
+  flex-wrap: wrap;
 }
 .settings-link {
   font-size: 15px;
@@ -92,16 +98,16 @@ a {
   margin-left: 5px;
 }
 .pinned-weather {
-  display: flex;
-  height: 80px;
-  width: 32%;
+  height: 400px;
+  width: 400px;
   font-size: 14px;
   font-weight: bolder;
   text-align: center;
   border: 2px solid black;
   border-radius: 5px;
   box-shadow: -5px 5px 5px #888888;
-  background: #ebebeb;
+  background-color: black;
+  z-index: -2;
 }
 .current-forecast {
   display: inline-block;
@@ -114,9 +120,6 @@ a {
 }
 .icon {
   align-self: flex-end;
-}
-.pinned-weather {
-    height: 100px;
 }
 .pinned-weather, .link {
     margin: 10px;
@@ -143,4 +146,10 @@ button:enabled {
 }
 button:disabled {
     cursor: not-allowed;
+}
+.new-city {
+  position: relative;
+  bottom: -179px;
+  color: white;
+  opacity: 0.7;
 }
