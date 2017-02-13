@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const PinnedWeather = ({ state, id }) =>
 {
   let sp = ' '
-  let img = "../public/styles/images/"
+  let img = "../styles/images/"
   let cityArray = [img + '1.png',img + '2.png',img + '3.png',img + '4.png',img + '5.png',img + '6.png',img + '7.png',img + '8.png', img + '9.png']
   const random = Math.floor(Math.random() * 9)
   return (
