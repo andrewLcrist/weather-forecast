@@ -37607,7 +37607,7 @@
 	      id = _ref.id;
 	
 	  var sp = ' ';
-	  var img = "../public/styles/images/";
+	  var img = "https://andrewlcrist.github.io/weather-forecast/public/styles/images/";
 	  var cityArray = [img + '1.png', img + '2.png', img + '3.png', img + '4.png', img + '5.png', img + '6.png', img + '7.png', img + '8.png', img + '9.png'];
 	  var random = Math.floor(Math.random() * 9);
 	  return _react2.default.createElement(
