@@ -2,7 +2,7 @@
 
 Application that allows users to immediately see their current weather forecast and the ability to add up to four other weather locations.
 
-The project was built with [React](https://facebook.github.io/react/), [webpack](https://webpack.github.io/), [React Router](https://github.com/ReactTraining/react-router), and CSS.
+The project was built with [React](https://facebook.github.io/react/), [Redux](http://redux.js.org/), [webpack](https://webpack.github.io/), [React Router](https://github.com/ReactTraining/react-router), and CSS.
 
 Weather information was acquired using [The Wunderground API](https://www.wunderground.com/weather/api/).
 
